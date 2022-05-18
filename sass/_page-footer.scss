@@ -1,0 +1,12 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-blocks {
+  display: flex;
+}
+
+@import "./footer-block-1";
+@import "./footer-block-2";
+@import "./footer-block-3";
