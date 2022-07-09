@@ -1,10 +1,13 @@
-@import "./_reset.scss";
-@import "./vars.scss";
-@import "./page-header";
-@import "./main-page/_hero.scss";
-@import "./modal.scss";
-@import "./main-page/_block-1.scss";
-@import "./main-page/_about-us.scss";
-@import "./main-page/_team.scss";
-@import "./main-page/_regular-clients.scss";
-@import "./page-footer";
+@import "./base/reset";
+@import "./utils/vars";
+@import "./components/page-header";
+// Главная начало
+@import "./main-page/hero";
+@import "./_modal.scss";
+@import "./main-page/block-1";
+@import "./main-page/about-us";
+@import "./main-page/team";
+@import "./main-page/regular-clients";
+// Главная конец
+
+@import "./components/page-footer";

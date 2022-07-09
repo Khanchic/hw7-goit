@@ -21,6 +21,18 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $colorblue;
+  }
+  &:focus {
+    color: $colorblue;
+  }
+  &:hover .mail-icon {
+    fill: $colorblue;
+  }
+  &:focus .mail-icon {
+    fill: $colorblue;
+  }
 }
 .mail-icon {
   width: 16px;
@@ -31,6 +43,9 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $colorblue;
+  }
 }
 .header-block__telefon {
   font-size: 14px;
@@ -45,6 +60,19 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $colorblue;
+  }
+  &:hover .telefon-icon {
+    fill: $colorblue;
+    
+  }
+  &:focus {
+    color: $colorblue;
+  }
+  &:focus .telefon-icon {
+    fill: $colorblue;
+  }
 }
 .telefon-icon {
   width: 10px;
@@ -55,4 +83,7 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $colorblue;
+  }
 }

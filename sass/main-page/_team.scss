@@ -27,7 +27,7 @@
     margin-right: 0;
   }
 }
-.person__informatiom {
+.person__information {
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -50,7 +50,7 @@
   justify-content: center;
   margin-top: 16px;
 }
-.person__social-innformation + .person__social-innformation {
+.person__social-information + .person__social-information {
   margin-left: 10px;
 }
 .person__social-link {
@@ -79,4 +79,10 @@
 }
 .person__social-icon {
   fill: #757575;
+  &:hover {
+    fill: #ffffff;
+  }
+  &:focus {
+    fill: #ffffff;
+  }
 }

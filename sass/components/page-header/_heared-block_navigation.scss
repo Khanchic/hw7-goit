@@ -1,6 +1,7 @@
 .header-block__navigation {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 .header-block__page {
   margin-right: 50px;
@@ -26,6 +27,9 @@
   &:hover {
     color: $colorblue;
   }
+  &:focus {
+    color: $colorblue;
+  }
 }
 .header-block__page-2 {
   text-decoration: none;
@@ -41,6 +45,9 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   &:hover {
+    color: $colorblue;
+  }
+  &:focus {
     color: $colorblue;
   }
 }
@@ -60,9 +67,12 @@
   :focus {
     color: $colorblue;
   }
+  &:focus {
+    color: $colorblue;
+  }
 }
 .header-block__page__color {
-  color: #2196f3;
+  color: $colorblue;
   &::after {
     content: "";
     display: block;
@@ -71,7 +81,7 @@
     position: absolute;
     left: 0;
     bottom: -28px;
-    background: #2196f3;
+    background: $colorblue;
     border-radius: 2px;
   }
 }
