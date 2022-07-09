@@ -736,6 +736,10 @@ p {
   color: #757575;
 }
 
+.about-us {
+  padding-top: 0;
+}
+
 .about-us__title {
   font-size: 36px;
   line-height: 1.16;
