@@ -27,6 +27,11 @@
     transform: translateY(0);
   }
 }
+.block__picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .block__item {
   padding-left: 24px;
@@ -57,7 +62,7 @@
 }
 .block__text {
   position: absolute;
-  top: 0%;
+  top: 2%;
   left: 0%;
   font-weight: 400;
   font-size: 18px;

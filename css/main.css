@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+}
+
 .container {
   width: 1230px;
   padding-left: 15px;
@@ -210,7 +214,7 @@ p {
   height: 4px;
   position: absolute;
   left: 0;
-  bottom: -28px;
+  bottom: -32px;
   background: #2196f3;
   border-radius: 2px;
 }
@@ -383,6 +387,7 @@ p {
 }
 
 .hero__button {
+  display: block;
   width: 200px;
   font-family: Roboto;
   height: 50px;
@@ -394,12 +399,6 @@ p {
   cursor: pointer;
   border-radius: 4px;
   text-align: center;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button:hover {
@@ -413,12 +412,9 @@ p {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -426,21 +422,24 @@ p {
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
   background: #ffffff;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 40px;
   padding-left: 41px;
   padding-bottom: 40px;
@@ -463,12 +462,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   top: 8px;
   right: 8px;
 }
@@ -512,12 +505,6 @@ p {
   border-radius: 4px;
   margin-bottom: 10px;
   padding-left: 40px;
-  -webkit-transition-property: border, fill;
-  transition-property: border, fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_input:hover,
@@ -544,12 +531,6 @@ p {
   color: #000;
   resize: none;
   text-decoration: none;
-  -webkit-transition-property: border;
-  transition-property: border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_text:focus {
@@ -599,12 +580,6 @@ p {
   display: block;
   margin-top: 4.5px;
   margin-right: 5px;
-  -webkit-transition-property: border;
-  transition-property: border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_chekbox_text {
@@ -617,12 +592,6 @@ p {
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
-  -webkit-transition-property: border;
-  transition-property: border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 12px;
   margin-top: 20px;
 }
@@ -647,7 +616,7 @@ p {
   display: block;
   width: 200px;
   height: 50px;
-  background: #188ce8;
+  background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -656,17 +625,13 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  -webkit-transition-property: border;
-  transition-property: border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   right: 165px;
   left: 163px;
 }
 
 .bnt_text {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -916,7 +881,7 @@ p {
 }
 
 .person__social-icon {
-  fill: #757575;
+  fill: #afb1b8;
 }
 
 .person__social-icon:hover {
